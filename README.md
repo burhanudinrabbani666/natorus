@@ -1,10 +1,8 @@
 <p align="center">
   <a href="#">
-    <img alt="Ionic" src="./img/logo-green-small-2x.png" width="1000" />
+    <img alt="Ionic" src="./img/logo-green-2x.png" width="100" />
   </a>
 </p>
-
-<h2 align="center">NATOURS</h2>
 
 <p align="center">
   <img 
@@ -25,6 +23,9 @@
   />
 
 </p>
+
+## NATOURS
+
 Natours is a fictional company website inspired by nature.
 
 This repository was created as a learning space for CSS, with a primary focus on Sass (SCSS). It is part of my journey toward becoming a better Full Stack Developer, especially by strengthening my front-end styling skills.
