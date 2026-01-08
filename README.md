@@ -26,13 +26,9 @@
 
 ## NATOURS
 
-Natours is a fictional company website inspired by nature.
+Natours is a fictional company for marketing about touring in nature.
 
-This repository was created as a learning space for CSS, with a primary focus on Sass (SCSS). It is part of my journey toward becoming a better Full Stack Developer, especially by strengthening my front-end styling skills.
-
-All materials and implementations in this repository are based on courses I have taken on Udemy. This project is strictly for educational purposes and is not intended to claim ownership of any assets, designs, or learning materials related to the original course or the fictional website concept.
-
-## Course Reference
+This repository was created as a learning space for CSS, with a primary focus on Sass (SCSS). It is part of my journey toward becoming a better Full Stack Developer, especially by strengthening my front-end styling skills.All materials and implementations in this repository are based on courses I have taken on Udemy. This project is strictly for educational purposes and is not intended to claim ownership of any assets, designs, or learning materials related to the original course or the fictional website concept.
 
 The main course used as a learning resource:
 
@@ -47,3 +43,16 @@ The main course used as a learning resource:
 - Use modern layouts like Flexbox and Grid in a more structured and effective way
 
 ## thinks i learned
+
+- Basic animated with @keyframes and animation property
+- tsudo ::after css property
+
+## Section topics
+
+| Section | Title                                                                    | Notes                 | Status        |
+| ------- | ------------------------------------------------------------------------ | --------------------- | ------------- |
+| 2       | [Setup and first step](./notes/01-setup-and-first-step/)                 | - Animated properties | ✅ Completed  |
+| 3       | [How CSS works](./notes/02-how-css-works/)                               |                       | ✍️ In Learing |
+| 4       | [Introduction to SASS and NPM](./notes/03-introsuction-to-sass-and-npm/) |                       | ⏳ Waiting    |
+| 5       | [Advanced CSS](./notes/04-advanced-css/)                                 |                       | ⏳ Waiting    |
+| 6       | [Advenced responsive design](./notes/05-advance-responsive-design/)      |                       | ⏳ Waiting    |
