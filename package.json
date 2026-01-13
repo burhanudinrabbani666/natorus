@@ -1,0 +1,22 @@
+{
+  "name": "natorus",
+  "version": "1.0.0",
+  "description": "project for learning fundamental sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burhanudinrabbani666/natorus.git"
+  },
+  "author": "burhanudin rabbani and jonas schedtmann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/burhanudinrabbani666/natorus/issues"
+  },
+  "homepage": "https://github.com/burhanudinrabbani666/natorus#readme",
+  "dependencies": {
+    "sass": "^1.97.2"
+  }
+}
