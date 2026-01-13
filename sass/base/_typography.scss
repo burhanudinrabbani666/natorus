@@ -60,7 +60,7 @@ body {
   transition: all 0.3s;
 
   &:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    transform: skewY(2deg) skewX(15deg) scale(1.05);
     text-shadow: 0.5rem 1rem 2rem rgba(variables.$color-black, 0.2);
   }
 }
