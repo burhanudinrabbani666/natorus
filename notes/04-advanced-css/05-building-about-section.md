@@ -97,4 +97,4 @@ flying image
 }
 ```
 
-[Next: building About section](./05-building-about-section.md)
+[Next: building feautures](./06-bulding-feautures.md)
