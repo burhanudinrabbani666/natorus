@@ -1,0 +1,63 @@
+@use "../abstracts/variables";
+
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.6rem;
+
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 20rem;
+
+    position: relative;
+
+    transition: all 0.3s ease-out;
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(variables.$color-black, 0.2);
+
+    &::after {
+      transform: scaleX(1.1) scaleY(1.2);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(variables.$color-black, 0.2);
+  }
+
+  &--white {
+    background-color: variables.$color-white;
+    color: variables.$color-grey-dark;
+
+    &::after {
+      background-color: variables.$color-white;
+    }
+  }
+
+  &--animated {
+    animation: btnMoveInBottom 1s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 20rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+
+    transition: all 0.4s ease-out;
+  }
+}
