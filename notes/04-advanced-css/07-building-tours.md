@@ -1,0 +1,191 @@
+# BUILDING TOURS
+
+most highlight was rotate card way
+
+```scss
+.card {
+  // Function
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+
+  position: relative;
+  height: 52rem;
+
+  &__side {
+    height: 52rem;
+    transition: all 1s ease;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(variables.$color-black, 0.25);
+    backface-visibility: hidden;
+
+    overflow: hidden;
+    &--front {
+      background-color: variables.$color-white;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          variables.$color-secondary-light,
+          variables.$color-secondary-dark
+        );
+      }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          variables.$color-primary-light,
+          variables.$color-primary-dark
+        );
+      }
+
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          variables.$color-tertiary-light,
+          variables.$color-tertiary-dark
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  // Front styling
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    &--p1 {
+      background-image: linear-gradient(
+          to right bottom,
+          variables.$color-secondary-light,
+          variables.$color-secondary-dark
+        ), url(/img/nat-5.jpg);
+    }
+
+    &--p2 {
+      background-image: linear-gradient(
+          to right bottom,
+          variables.$color-primary-light,
+          variables.$color-primary-dark
+        ), url(/img/nat-6.jpg);
+    }
+
+    &--p3 {
+      background-image: linear-gradient(
+          to right bottom,
+          variables.$color-tertiary-light,
+          variables.$color-tertiary-dark
+        ), url(/img/nat-7.jpg);
+    }
+  }
+
+  &__heading {
+    color: variables.$color-white;
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+
+    position: absolute;
+
+    top: 12rem;
+    right: 2rem;
+
+    width: 75%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(variables.$color-secondary-light, 0.85),
+        rgba(variables.$color-secondary-dark, 0.85)
+      );
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(variables.$color-primary-light, 0.85),
+        rgba(variables.$color-primary-dark, 0.85)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(variables.$color-tertiary-light, 0.85),
+        rgba(variables.$color-tertiary-dark, 0.85)
+      );
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+    ul {
+      list-style: none;
+      width: 80%;
+
+      margin: 0 auto;
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid variables.$color-grey-light-2;
+        }
+      }
+    }
+  }
+
+  // Back styling
+
+  &__cta {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__price-box {
+    color: variables.$color-white;
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+  }
+}
+```
+
+[Next: Building stories](./08-building-the-stories.md)
