@@ -10,7 +10,7 @@
 
   &__side {
     height: 52rem;
-    transition: all 0.8s ease;
+    transition: all 1s ease;
 
     position: absolute;
     top: 0;
@@ -34,6 +34,22 @@
           to right bottom,
           variables.$color-secondary-light,
           variables.$color-secondary-dark
+        );
+      }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          variables.$color-primary-light,
+          variables.$color-primary-dark
+        );
+      }
+
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          variables.$color-tertiary-light,
+          variables.$color-tertiary-dark
         );
       }
     }
@@ -64,11 +80,21 @@
     }
 
     &--p2 {
-      background-image: url(/img/nat-5.jpg);
+      background-image: linear-gradient(
+          to right bottom,
+          variables.$color-primary-light,
+          variables.$color-primary-dark
+        ),
+        url(/img/nat-6.jpg);
     }
 
     &--p3 {
-      background-image: url(/img/nat-5.jpg);
+      background-image: linear-gradient(
+          to right bottom,
+          variables.$color-tertiary-light,
+          variables.$color-tertiary-dark
+        ),
+        url(/img/nat-7.jpg);
     }
   }
 
@@ -98,6 +124,22 @@
         rgba(variables.$color-secondary-dark, 0.85)
       );
     }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(variables.$color-primary-light, 0.85),
+        rgba(variables.$color-primary-dark, 0.85)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(variables.$color-tertiary-light, 0.85),
+        rgba(variables.$color-tertiary-dark, 0.85)
+      );
+    }
   }
 
   &__details {
@@ -117,5 +159,30 @@
         }
       }
     }
+  }
+
+  // Back styling
+
+  &__cta {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__price-box {
+    color: variables.$color-white;
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
   }
 }

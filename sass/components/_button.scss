@@ -40,6 +40,15 @@
     }
   }
 
+  &--green {
+    background-color: variables.$color-primary;
+    color: variables.$color-white;
+
+    &::after {
+      background-color: variables.$color-primary;
+    }
+  }
+
   &--animated {
     animation: btnMoveInBottom 1s ease-out 0.75s;
     animation-fill-mode: backwards;
