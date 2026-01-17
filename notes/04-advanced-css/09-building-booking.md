@@ -70,7 +70,7 @@ creating nice effect form input
     font-size: 1.2rem;
     font-weight: 700;
     margin-left: 2rem;
-    margin-top: 1rem;
+    margin-top: 0.7rem;
     display: block;
 
     transition: all 0.3s ease;
