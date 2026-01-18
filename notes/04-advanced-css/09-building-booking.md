@@ -83,3 +83,60 @@ creating nice effect form input
   }
 }
 ```
+
+Building custom radio button dengan
+
+```scss
+&__radio-group {
+  width: 49%;
+  display: inline-block;
+}
+
+&__radio-input {
+  display: none;
+}
+
+&__radio-label {
+  font-size: variables.$default-font-size;
+  cursor: pointer;
+  position: relative;
+  padding-left: 4.5rem;
+}
+
+&__radio-button {
+  height: 3rem;
+  width: 3rem;
+  border: 5px solid variables.$color-primary;
+
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+
+  left: 0;
+  top: -0.5rem;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 1.3rem;
+    width: 1.3rem;
+
+    background-color: variables.$color-primary;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    opacity: 0;
+
+    transition: opacity 0.2s;
+  }
+}
+
+&__radio-input:checked ~ &__radio-label &__radio-button::after {
+  opacity: 1;
+}
+```
+
+[Next: Building footer](./10-building-footer.md)
