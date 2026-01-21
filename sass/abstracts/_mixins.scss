@@ -33,6 +33,8 @@ $breakppoint argument choice
 
 */
 
+// ORDER: Base + Typography > general Layout + grid > page layout > Components
+
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {
