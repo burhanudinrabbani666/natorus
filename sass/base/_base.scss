@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 *,
 *::after,
@@ -9,7 +10,21 @@
 }
 
 html {
-  font-size: 62.5%; // Overall rem
+  font-size: 62.5%; // Overall rem;  1rem = 10px; 10px/16px = 62.5%
+
+  // form bigger to  small
+  @include mixins.respond(tablet-landscape) {
+    font-size: 56.5%; // 1 rem = 9px, 9px/16px = 56.5%
+  }
+
+  @include mixins.respond(tablet-potrait) {
+    font-size: 50%; // 1 rem = 8px, 8px/16px = 50%
+  }
+
+  // This min
+  @include mixins.respond(big-desktop) {
+    font-size: 75%; // 1 rem = 12px, 12px/16px = 75%
+  }
 }
 
 body {
