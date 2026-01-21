@@ -1,6 +1,6 @@
 # BUILDING NAVIGATION
 
-disini kita menggunakan properti checkbox untuk menambhakan logic menampilkan dan menghilagkan navigation
+Here we use the checkbox property to add logic to display and remove navigation.
 
 ```html
 <div class="navigation">
