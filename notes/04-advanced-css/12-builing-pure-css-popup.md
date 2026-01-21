@@ -54,3 +54,47 @@
   hyphens: auto;
 }
 ```
+
+### :target
+
+```html
+<a href="#popup" class="btn btn--white">Book now!</a>
+
+⬇️
+<div class="popup" id="popup"></div>
+```
+
+```scss
+&:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+&:target &__content {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+&__close {
+  &:link,
+  &:visited {
+    color: variables.$color-grey-dark;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.4s;
+    line-height: 1;
+  }
+
+  &:hover,
+  &:active {
+    color: variables.$color-primary;
+  }
+}
+```
+
+[Next: Scetion 4 - Advanced responsive design](../05-advance-responsive-design/01-mobile-first-vs-desktop-first.md)
