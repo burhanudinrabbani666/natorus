@@ -40,19 +40,52 @@ The main course used as a learning resource:
 - Use SASS more flexibly and effectively
 - Use CSS animations for a better user experience
 - Gain experience writing HTML and CSS more professionally
-- Use modern layouts like Flexbox and Grid in a more structured and effective way
 
-## thinks i learned
+## Thinks I Learned
 
-- Basic animated with @keyframes and animation property
-- tsudo ::after css property
+- Basic animated with `@keyframes` and animation property
+- Using pseudo `::after` css property
+- css work behind the scene
+- Layout Techniques using float and transform
+- Using the `:checked` hack for navigation and popup
+- Spinning card with `transform` properti
+- responsive design: image, font, icon etc
+- developer workflow
 
 ## Section topics
 
-| Section | Title                                                                    | Notes                 | Status        |
-| ------- | ------------------------------------------------------------------------ | --------------------- | ------------- |
-| 2       | [Setup and first step](./notes/01-setup-and-first-step/)                 | - Animated properties | ✅ Completed  |
-| 3       | [How CSS works](./notes/02-how-css-works/)                               |                       | ✍️ In Learing |
-| 4       | [Introduction to SASS and NPM](./notes/03-introsuction-to-sass-and-npm/) |                       | ⏳ Waiting    |
-| 5       | [Advanced CSS](./notes/04-advanced-css/)                                 |                       | ⏳ Waiting    |
-| 6       | [Advenced responsive design](./notes/05-advance-responsive-design/)      |                       | ⏳ Waiting    |
+| Section | Title                                                                    | Notes                                                                   | Status       |
+| ------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------- | ------------ |
+| 2       | [Setup and first step](./notes/01-setup-and-first-step/)                 | - Animated properties                                                   | ✅ Completed |
+| 3       | [How CSS works](./notes/02-how-css-works/)                               | - css working behind the scenes                                         | ✅ Completed |
+| 4       | [Introduction to SASS and NPM](./notes/03-introsuction-to-sass-and-npm/) | - Sass                                                                  | ✅ Completed |
+| 5       | [Advanced CSS](./notes/04-advanced-css/)                                 | - button and Layout                                                     | ✅ Completed |
+| 6       | [Advanced responsive design](./notes/05-advance-responsive-design/)      | - responsive web design with sass mixins, development workflow, testing | ✅ Completed |
+
+## 👐 Final Thoughts
+
+Alhamdulillah, this project has been a great learning journey. I explored modern CSS techniques, built a clean and stylish introduction using **Sass**, and gained a clearer understanding of a **real-world CSS developer workflow**.
+
+This project is not the end — it’s a foundation. In the future, I plan to:
+
+- Revisit this project to add JavaScript for richer interactivity
+- Expand it with new pages to further practice and refine my Sass skills
+- Continue improving structure, performance, and maintainability
+
+Every step here brought me closer to writing cleaner, more scalable front-end code. I’m excited to come back stronger and push this project even further 🚀.
+
+## Screenshot of the website
+
+### Desktop
+
+![Desktop 1](./img/natours-ss/ss1.png)
+![Desktop 2](./img/natours-ss/ss2.png)
+![Desktop 3](./img/natours-ss/ss3.png)
+![Desktop 4](./img/natours-ss/ss4.png)
+
+### Mobile
+
+![Mobile 1](./img/natours-ss/ss1mobile.png)
+![Mobile 2](./img/natours-ss/ss2mobile.png)
+![Mobile 3](./img/natours-ss/ss3mobile.png)
+![Mobile 4](./img/natours-ss/ss4mobile.png)
