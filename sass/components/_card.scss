@@ -222,7 +222,8 @@
     font-weight: 100;
   }
 
-  @include mixins.respond(tablet-potrait) {
+  // @include mixins.respond(tablet-potrait) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     // Function
     height: auto;
     border-radius: 3px;
